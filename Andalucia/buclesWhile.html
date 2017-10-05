@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bucles while y do while</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		function controlParental(){
+			var respuesta = prompt("Escribe el nombre y apellido del primer presidente de la democracia de españa.");
+			while (respuesta!= "Adolfo Suarez"&&"adolfo suarez"&&"Adolfo Suárez"&&"adolfo suárez"){
+				//no mostrar texto de la pagina
+			}
+		}
+
+		function controlParentalPulido(){
+			var respuesta = prompt("Escribe el nombre y apellido del primer presidente de la democracia de españa.");
+
+			while (respuesta!= "Adolfo Suarez"){
+				if (respuesta == "Adolfo"){
+					var respuesta = prompt("Has acertado el nombre, te falta el apellido.Escribe el nombre y apellido del primer presidente de la democracia de españa.");
+				}else {
+					var respuesta = prompt("ERROR: Intentelo de nuevo.Escribe el nombre y apellido del primer presidente de la democracia de españa.");
+				}
+			}
+			alert("Has conseguido pasar el control parental.");
+		}
+
+		controlParentalPulido();
+	</script>
+</body>
+</html>
