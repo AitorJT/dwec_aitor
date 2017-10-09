@@ -2,18 +2,23 @@ function crearHoras(){
 	var minsInicio;
 	var horaInicio;
 	var horario;
-	horario = "08:00";
-	for (horaInicio = 08,minsInicio = 00;horaInicio =20 && minsInicio = 30; horaInicio++){
-		if(horaInicio == 20){
-			for(var i = 0;i < 2; i++){
+	horario = "Horas disponibles";
+	for (horaInicio = 08,minsInicio = 00;horaInicio < 21 ; horaInicio++){
+		minsInicio=0;
+		horario =horario +";   " +horaInicio+":00";
+
+		if(horaInicio == 20){	
+			for(var j = 0;j < 2; j++){
 			minsInicio = minsInicio + 15;
-			horario =horario +"<br>" +horaInicio+":"+minsInicio;
+			horario =horario +";   " +horaInicio+":"+minsInicio;
 			}	
 		}else{
-			for(var i = 0;i < 4; i++){
+			for(var i = 0;i < 3; i++){
 				minsInicio = minsInicio + 15;
-				horario =horario +"<br>" +horaInicio+":"+minsInicio;
+				horario =horario +";   " +horaInicio+":"+minsInicio;
 			}	
+			
 		}	
 	}
+	alert(horario);
 }
