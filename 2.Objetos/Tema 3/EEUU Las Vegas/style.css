@@ -1,0 +1,20 @@
+div#mesa{
+    margin: 0px auto;
+    background: aqua;
+    border: black 1px solid;
+    padding:20px;
+    width:800;
+    height:600;
+    
+    
+}
+div#mesa > div{
+    text-align: center;
+    margin:10px;
+    padding: 20px;
+    background: url(dorso.png);
+    border: purple 1px solid;
+    width:60px;
+    height:45px;
+    float:left;
+}
