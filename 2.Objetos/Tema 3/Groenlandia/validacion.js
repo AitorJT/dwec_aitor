@@ -10,14 +10,14 @@ function iniciar() {
 }
 
 function soporta(){
-    if(typeof(Storage)!== "undefined"){
-        if(!localStorage.getItem("contForfait")){
-            localStorage.setItem("contForfait","0");
+        if(typeof(Storage)!== "undefined"){
+            if(!localStorage.getItem("contForfait")){
+                localStorage.setItem("contForfait","0");
+            }
+            if(!localStorage.getItem("contSocio")){
+                localStorage.setItem("contSocio","0");
+            }
         }
-        if(!localStorage.getItem("contSocio")){
-            localStorage.setItem("contSocio","0");
-        }
-    }
 }
 function contForfait(){
     localStorage.setItem("contForfait",Number(localStorage.getItem("contForfait"))+1);

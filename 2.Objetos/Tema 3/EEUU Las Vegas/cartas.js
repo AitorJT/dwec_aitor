@@ -10,7 +10,8 @@ function voltear(){
     }
 }*/
 
-
+//falta por añadir, imagenes de cara, y que cambien de aspecto(bordes)al acertar
+//
 let mazo = ['a','a','b','b','c','c','d','d','e','e','f','f','g','g','h','h','i','i'];
 let cartasMemoria = [];
 let cont = 0;
@@ -55,6 +56,7 @@ function voltear(carta,valor){
                 }
             }else{
                 //desvoltear();
+                //no se pone la funcion desvoltear aqui ya que el timeout es el que hace la llamada
                 //espera un segundo antes de llevar a cabo la accion
                 setTimeout(desvoltear,1000);
             }

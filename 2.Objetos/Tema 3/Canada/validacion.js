@@ -52,6 +52,7 @@ function error(e, error) {
     document.getElementById("mensajeError").innerHTML = error;
     elemento.className = "error";
     elemento.focus();
+    
 }
 
 

@@ -59,6 +59,7 @@ function validaNumero() {
     }
     return true;
 }
+    
     function validaVirus() {
     var elemento = document.getElementById("ivirus");
     if (!elemento.checkValidity()) {
