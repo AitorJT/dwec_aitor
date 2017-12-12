@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulario</title>
+    <script src="validacion.js"></script>
+    <style>
+        .error {
+            border: solid 2px #FF0000;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <button type="button" id="contForfait">COntador Forfaits</button><input  value="Reset" id="resetForfait" />
+    <button type="button" id="contSocio">Contador de forfaits de Socios</button><input  value="Reset" id="resetSocio" />
+    <h1>Formulario</h1>
+    
+    <form action="procesar.php" method="post" id="miFormulario">
+        <table>
+            <tr>
+                <td>Nombre y apellidos: </td>
+                <td>
+                    <input type="text" name="nombre" id="nombre" required/>
+                </td>
+            </tr>
+            <tr>
+                <td>Identificador: </td>
+                <td>
+                    <!-- numero+8letras+num-->
+                    <input type="text" name="identificador" id="identificador" required pattern="[0-9]{1}+[A-Za-z]{8}+[0-9]{1}"/>
+                </td>
+            </tr>
+            <tr>
+                <td>Correo electrónico: </td>
+                <td>
+                    <!-- el tipo email me ahorra el pattern -->
+                    <input type="email" name="correo" id="correo" />
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Telefono: </td>
+                <td>
+                    <input type="text" name="telefono" id="telefono" />
+                </td>
+            </tr>
+            <tr>
+                <td>Fecha de nacimiento: </td>
+                <td>
+                    <input type="number" name="dia" size="2" id="dia" value="dd" required/>
+                    <input type="number" name="mes" size="2" id="mes" value="mm"required/>
+                    <input type="number" name="ano" id="ano" size="4" value="yyyy" required/>
+                </td>
+            </tr>
+            <tr>
+                <td>Edad: </td>
+                <td>
+                    <select name="edad" form="edad" >
+                        <option value="nino">Niño</option>
+                        <option value="adulto">Adulto</option>
+                        <option value="jubilado">Jubilado</option>
+                    </select>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>Pertenece a un club de esquí:</td>
+                <td>
+                    <input type="checkbox" id="socio" name="socio" onclick="dynInput(this);" />
+                    <p id="insertinputs"></p>
+                </td>
+            </tr>
+            
+            
+        </table>
+        <p id="mensajeError"></p>
+        <p>
+            <input type="submit" value="Enviar" id="enviar" />
+            <input type="reset" value="Borrar" id="borrar" />
+        </p>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulario</title>
+    <script src="validacion.js"></script>
+    <style>
+        .error {
+            border: solid 2px #FF0000;
+        }
+    </style>
+</head>
+
+<body>
+    
+   
+    <p id="saludo"></p>
+    <h1>Formulario</h1>
+    
+    <form action="procesar.php" method="post" id="miFormulario">
+        <table>
+            <tr>
+                <td>Nombre de investigador: </td>
+                <td>
+                    <input type="text" name="nombre" id="nombre" minlength="2" maxLength="32" required/>
+                </td>
+            </tr>
+            <tr>
+                <td>Numero de investigador: </td>
+                <td>
+                    <!--8nums + letra-->
+                    <input type="text" name="identificador" id="identificador" required pattern="[0-9]{8}+[A-Za-z]{1}"/>
+                </td>
+            </tr>
+            <tr>
+                <td>ID firma del virus </td>
+                <td>
+                    
+                    <input type="number" name="virus" id="virus" min="1" max="9999999999" />
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Firma s4nd1eg0: </td>
+                <td>
+                    <input type="text" name="sandiego" id="sandiego" pattern="S4ND1EG0[a-zA-Z0-9]{8-50}" />
+                </td>
+            </tr>
+            
+            
+            
+            
+        </table>
+        <p id="mensajeError"></p>
+        <p>
+            <input type="submit" value="Enviar" id="enviar" />
+            <input type="reset" value="Borrar" id="borrar" />
+        </p>
+    </form>
+</body>
+
+</html>
