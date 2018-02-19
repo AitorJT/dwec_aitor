@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Van Gogh</title>
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="script2.js"></script>
+
+	<style>
+        body{
+            background-color: mediumpurple;
+        }
+		td{
+			height: 3px;
+			width: 3px;
+			border: 1px solid black;
+		}
+		#colores{
+			display: flex;
+			
+		}
+		#colores div{height: 40px;width: 40px; }
+        #aqua{background-color: aqua;}
+		#purple{background-color: purple;}
+		#green{background-color: green;}
+		#blue{background-color: blue;}
+		#yellow{background-color: yellow;}
+        #red{background-color: red;}
+		
+	</style>
+
+  
+</head>
+
+<body>
+	<h1>LIENZO</h1>
+	
+	<div id="colores">
+		<div id="blue"></div>
+        <div id="red"></div>
+		<div id="aqua"></div>
+        <div id="green"></div>
+		<div id="yellow"></div>
+		<div id="purple"></div>
+	</div>
+    <h2>Escoge un color</h2>
+	<br>
+	<h3 id="texto">Color: Sin color</h3>
+	<br>
+	<table id="tabla"></table>
+</body>
+</html>

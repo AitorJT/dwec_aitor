@@ -22,7 +22,10 @@ function inicio(){
     });
     
     $("#comerColumna").on("click",function(){
-        $("td:first-child").remove();
+        //$("td:first-child").remove();
+        $("td:first-child").text("¡MMMMM....!");
+        $("td:first-child").css("backgroundColor","red");
+        $("td:first-child").off();
     });
     $("#comerFila").on("click",function(){
         $("tr:first").remove();
