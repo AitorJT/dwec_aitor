@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dom acceso y modificacion</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+        table{
+            border:5px solid;
+            padding:10px;
+        }
+        td{
+            border:5px solid;
+        }
+        div{
+            border-style: double solid;
+        }
+    </style>
+    <script src="operacionChina.js"></script>
+	<script type="text/javascript">
+		window.addEventListener("load", inicio);
+
+		
+		
+	</script>
+    <script src="jquery-3.1.1.min.js"></script>
+    
+</head>
+
+<body>
+    <h1>No hacer mouseover en ninguna imagen si no deseas leer spoilers de Juego de Tronos</h1>
+	<table>
+		<tr>
+			<td  class="stark"id="ned"><img class="muerto" src="ned.jpeg" height="300" width="300"></td>
+			<td  class="stark" id="arya"><img class="vivo" src="arya.jpeg" height="300" width="300"></td>
+			<td  class="stark" id="jon"><img class="vivo" src="jon.jpeg" height="300" width="300"></td>
+		</tr>
+		<tr>
+			<td  class="martell" id="oberyn"><img class="muerto" src="oberyn.jpeg" height="300" width="300"></td>
+			<td  class="lannister" id="tywin"><img class="muerto" src="tywin.jpeg" height="300" width="300"></td>
+			<td  class="lannister" id="cersei"><img  class="vivo" src="cersei.jpeg" height="300" width="300"></td>
+		</tr>
+	</table>
+    <div id="panelInf">
+    
+    </div>
+    <button class ="mostrarStark" id="mostrarStark"name="mostrarStark" >mostrar familia Stark</button>
+    <button class ="mostrarLannister" id="mostrarLannister"name="mostrarLannister" >mostrar familia Lannister</button>
+    <button id="mostrarMuertos" name="mostrarMuertos" >mostrar personajes que están muertos</button>
+</body>
+</html>
