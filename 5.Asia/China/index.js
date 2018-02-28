@@ -17,10 +17,20 @@ function inicio(){
             document.getElementById("oberyn").addEventListener("mouseover",addTextoOberyn);
     
             document.getElementById("oberyn").addEventListener("mouseout", remTextoOberyn);
+
+            document.getElementById("selStark").addEventListener("click",selStark);
     
             
 
 		}
+
+function selStark(){
+	var starks = document.getElementsByClassName("stark");
+	for (var i = 0; i < starks.length; i++) {
+		starks[i].style.backgroundColor="blue";
+
+	}
+}
 
 function remTextoNed(){
 			document.getElementById("ned").removeChild(document.getElementById("ned").lastChild);

@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script src="creacionVariables.js"></script>
+        <script src="formulas.js"></script>
+        
+    </head>
+    
+    <body>
+       
+        <script>
+            //ni idea de por que no funciona
+            var areaTriangulo = function (b,a){return b * a / 2;};
+            var resultadoAreaTri= areaTriangulo(5,3);
+            alert(resultadoAreaTri);
+            
+            var resultadoPerimIsos = perimetroTrianguloIsosceles(lado1,lado2);
+            alert (resultadoPerimIsos);    
+            
+            var resultadoPerimEqui = perimetroTrianguloEquilatero(lado1);
+            alert (resultadoPerimEqui);
+                
+            var resultadoPeriEsca = perimetroTrianguloEscaleno(lado1,lado2,lado3);
+            alert (resultadoPerimEsca);
+            
+            var resultadoAreaCuadr = areaCuadrado(lado1);
+            alert(resultadoAreaCuadr);
+            
+            var resultadoPerimCuadr = perimetroCuadrado(lado1);
+            alert(resultadoPerimCuadr);
+            
+            var resultadoAreaRect = areaRectangulo(lado1,lado2);
+            alert(resultadoAreaRect);
+        </script>
+    </body>
+</html>

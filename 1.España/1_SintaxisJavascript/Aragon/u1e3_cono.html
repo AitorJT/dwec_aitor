@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+        // u1e3_cono.html
+        /* En Santiago de Compostela están trabajando en un prototipo de conos como sombreros para no mojarse y que así puedan pasearse por la ciudad cuando llueve (es decir, prácticamente todo el año).
+        Están creando conos de distinto tamaño en función del radio de la cabeza de cada gallego y de la altura que quieren darle al cono y necesitan calcular el volumen de cada uno, pero lo están haciendo a mano. ¿Podrías ayudarles a automatizar esa tarea?
+        Realiza las operaciones, primero, paso a paso y luego utilizando una sola línea de código. */
+            
+        var radio= prompt("introduzca el radio de la cabeza.") ;   
+        var altura = prompt("introduzca la altura del cono");
+        
+        var volumen = radio * Math.pow(Math.PI,2) * altura / 3;
+        
+        alert("el volumen del tan necesario cono para protegerse de la lluvia es "+volumen);
+        
+        </script>
+    </body>
+</html>
